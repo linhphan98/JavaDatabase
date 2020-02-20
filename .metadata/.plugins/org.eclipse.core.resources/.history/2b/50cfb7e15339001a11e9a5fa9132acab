@@ -1,0 +1,63 @@
+package com.web.jdbc;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class StudentDBUtil {
+	
+	private DataSource dataSource; 
+	
+	public StudentDBUtil(DataSource theDataSource) {
+		dataSource = theDataSource; 
+	}
+	
+	public List<Student> getStudent() throws Exception{
+		List<Student> students = new ArrayList<>(); 
+		
+		Connection myConn = null; 
+		Statement myState = null; 
+		ResultSet myResult = null; 
+		
+		try {
+		// Get a connection 
+			myConn = dataSource.getConnection(); 
+			
+		// Create SQL statement 
+			String sql = "select * from student order by last_name"; 
+			
+		// Execute query 
+			myState = myConn.createStatement(); 
+			
+		// Process result set 
+			myResult = myState.executeQuery(sql); 
+			
+			while(myResult.next()) {
+				
+				// Retrieve data from result set row 
+				int id = myResult.getInt("id"); 
+				String firstName = myResult.getString("first_name"); 
+				String lastName = myResult.getString("last_name");
+				String email = myResult.getString("email"); 
+				
+				// Create new student object for every time it loops through 
+				Student temp = new Student(id, firstName, lastName, email);
+				students.add(temp)
+				
+				// add it to the list of students 
+				
+			}
+			
+			return students; 		
+		}catch(Exception e) {
+			
+		}
+		
+		// close JDBC objects
+
+	}
+}

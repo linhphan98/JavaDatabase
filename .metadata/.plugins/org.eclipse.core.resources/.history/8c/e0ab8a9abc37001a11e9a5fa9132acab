@@ -1,0 +1,14 @@
+package com.mvcStudent;
+
+import java.util.List;
+
+public class StudentDataUtil {
+	public static List<Student> getStudent(){
+		
+		// create an empty list
+		
+		// add sample data
+		
+		// return the list
+	}
+}

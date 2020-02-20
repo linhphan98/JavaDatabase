@@ -1,0 +1,15 @@
+package jsp.tagDemo;
+
+public class Student {
+	
+	private String firstName, lastName; 
+	private boolean goldCustomer; 
+	
+	public Student(String firstName, String lastName, boolean goldCustomer) {
+		this.firstName = firstName; 
+		this.lastName = lastName; 
+		this.goldCustomer = goldCustomer;
+	}
+}
+
+

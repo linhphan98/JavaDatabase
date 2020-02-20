@@ -1,0 +1,44 @@
+package com.web.jdbc;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.sql.DataSource;
+
+public class StudentDBUtil {
+	
+	private DataSource dataSource; 
+	
+	public StudentDBUtil(DataSource theDataSource) {
+		dataSource = theDataSource; 
+	}
+	
+	public List<Student> getStudent() throws Exception{
+		List<Student> students = new ArrayList<>(); 
+		
+		Connection myConn = null; 
+		Statement myState = null; 
+		ResultSet myResult = null; 
+		
+		try {
+		// Get a connection 
+		
+		// Create SQL statement 
+		
+		// Execute query 
+		
+		// Process result set 
+		
+		// close JDBC objects
+			
+			return students; 		
+		}catch(Exception e) {
+			
+		}
+		
+
+	}
+}

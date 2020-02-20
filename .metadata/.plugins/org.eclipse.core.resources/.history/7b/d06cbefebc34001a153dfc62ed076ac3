@@ -1,0 +1,45 @@
+<%@ page import = "java.util.*" %>
+
+<html>
+	<body>
+		<!-- 1/ Create HTML form -->
+		<form action="todoList.jsp">
+			Add new item: <input type="text" name="theItem"/>
+			<input type="submit" value="Submit">
+		</form>
+		
+		<!-- 2/ Add new item to "To Do" List -->
+		<%
+			// get the To Do items from the session
+			List<String> items = (List<String>) session.getAttribute("myToDoList"); 
+		
+			// if the To Do item does not exist, then create a new one
+			if(items == null){
+				items = new ArrayList<String>();
+				session.setAttribute("myToDoList", items);
+			}
+			// see if there is form data to add
+			String theItem = request.getParameter("theItem");
+			if(theItem != null && theItem != ""){
+				// Check if there is a duplicate 
+				for(int i = 0; i < items.size(); i++){
+					if(theItem.toLowerCase() != items.get(i).toLowerCase()){
+						
+					}
+				}
+				
+			}
+		%>
+		
+		<!-- 3/ Display all "To Do" item based on each session -->
+		<b>To Do List Items: </b><br/>
+		<ol>
+			<%
+				for (String temp : items){
+					out.println("<li>" + temp + "</li>");
+				}
+			%>
+		</ol>
+		
+	</body>
+</html>

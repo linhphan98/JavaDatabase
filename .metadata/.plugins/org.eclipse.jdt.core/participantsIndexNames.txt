@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1365534416.index
+/web-student-tracker/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2330035191.index
+/helloWorld/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2322753017.index
+/JSTLtagDemo/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2835825772.index
+/MVCdemo/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2729125464.index
+/web-student-tracker/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1615533460.index
+/SessionCookieTracking/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2660291409.index
+/readingHTML/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1716040060.index
+/JSTLtagDemo/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/709731078.index
+/JSTLtagDemo/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4120279803.index
+/MultiLingualWebApp/src
+/Users/linhphan/Documents/JSP/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2675435457.index
+/jspDemo/src
